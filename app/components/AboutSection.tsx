@@ -1,7 +1,6 @@
 import { SectionTitlePill } from "./SectionTitlePill";
 import { HorizontalLine } from "./HorizontalLine";
 import { ConnectionsBento } from "./ConnectionsBento";
-import { ToolboxBento } from "./ToolboxBento";
 import { CalendarBento } from "./CalendarBento";
 import { BentoCard } from "./BentoCard";
 import { CurrentlyPlayingBento } from "./CurrentlyPlayingBento";
@@ -26,7 +25,6 @@ export function AboutSection(): React.ReactNode {
               Currnetly Playing
             </BentoCard>
             <ConnectionsBento />
-            <ToolboxBento />
             <CalendarBento />
           </div>
           <HorizontalLine />
@@ -38,8 +36,6 @@ export function AboutSection(): React.ReactNode {
         <div className="group relative col-span-5 row-span-6 flex h-[220px] flex-col overflow-hidden rounded-2xl border border-border-primary p-6 hover:bg-white"></div>
 
         <ConnectionsBento />
-
-        <ToolboxBento />
 
         <CalendarBento />
       </div>

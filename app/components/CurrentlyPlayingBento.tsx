@@ -1,12 +1,9 @@
 "use client";
 
-import useSWR from "swr";
-
 import { type CurrentlyPlaying } from "app/db/spotify";
 import Link from "next/link";
 import { BentoCard } from "./BentoCard";
-import { CirclePattern } from "./SpeakingBento";
-import { getCurrentlyPlaying } from "@/app/db/actions";
+import { CirclePattern } from "./CirclePattern";
 
 const favorite: CurrentlyPlaying = {
   artist: "Bear McCreary",
@@ -20,28 +17,10 @@ const favorite: CurrentlyPlaying = {
   isPlaying: false,
 };
 
+// Frontend-only: Uses static favorite track (backend disabled)
 export function CurrentlyPlayingBento() {
-  const { data: playing, isLoading } = useSWR(
-    "currently-playing",
-    getCurrentlyPlaying,
-    {
-      revalidateOnFocus: true,
-      refreshInterval: 60000,
-    },
-  );
-
-  const currentTrack = playing || favorite;
-  const isCurrentlyPlaying = !!playing;
-
-  if (isLoading) {
-    return (
-      <div className="group relative col-span-5 row-span-6 flex h-[220px] flex-col overflow-hidden rounded-2xl border border-border-primary p-6 hover:bg-white">
-        <p className="animate-pulse text-base text-text-primary">
-          Loading music...
-        </p>
-      </div>
-    );
-  }
+  const currentTrack = favorite;
+  const isCurrentlyPlaying = false;
 
   return (
     <BentoCard height="h-[300px]">

@@ -4,66 +4,50 @@ import { Timeline } from "./Timeline";
 const resumeData: ResumeData = {
   experiences: [
     {
-      company: "LogicGate",
-      period: "2022 - Present",
+      company: "Edelweiss Global Markets",
+      period: "Jul 2025 - Present",
       positions: [
         {
-          title: "Frontend Developer III",
+          title: "Software Developer",
           description: [
-            "I lead feature development on a team by analyzing requirements, designing solutions, and assist in evolving the frontend chapter of our organization.",
-          ],
-        },
-        {
-          title: "Frontend Developer II",
-          description: [
-            "I joined LogicGate and immediately took charge of feature development on my team while also assisting other frontend developers in the organization.",
+            "Collaborated closely with business analysts and MIS users to understand trading and post-trade requirements, map end-to-end operational workflows, and translate business needs into scalable backend solutions supporting middle- and back-office systems.",
+            "Built reference data (RefData) platforms to manage instrument master data across domestic and international exchanges, defining efficient data models and contract ingestion workflows for equities, derivatives, commodities, and currency instruments.",
+            "Automated international instrument onboarding by integrating with the Interactive Brokers (IB) API, enabling scalable creation and storage of global instruments and supporting expansion into international trading.",
+            "Automated IRS reconciliation and P&L workflows, replacing manual processes with backend services for realized and unrealized P&L reporting, and conducted walkthroughs with MIS teams to ensure adoption and smooth handover.",
           ],
         },
       ],
     },
     {
-      company: "Cognizant",
-      period: "2019 - 2021",
+      company: "Gupshup Technology",
+      period: "Feb 2024 - Jun 2025",
       positions: [
         {
-          title: "Senior Fullstack Developer",
+          title: "Software Engineer-1",
           description: [
-            "I designed and developed full-stack RESTful microservices using Netflix OSS, Java, Spring Boot, SQL, Angular, React, and Vue.",
-            "I led development teams, utilizing extreme programming principles such as agile, test-driven development, and paired programming.",
-            "I spearheaded the information architecture and developed a reusable UI component library for healthcare clients.",
-            "I led over 650 developers through a monthly enablement process, training them for client work on the Digital Engineering stack.",
+            "Architected and delivered a live chat support system for enterprise clients, collaborating with 5–6 cross-functional teams (product, engineering, QA) to align requirements, integrations, and delivery timelines, ensuring seamless end-to-end functionality.",
+            "Led technical onboarding and customization workflows for Instagram and Google Business Messaging, integrating Google SDKs and Facebook Graph APIs to reduce client onboarding time by 70% and improve channel adoption.",
+            "Worked closely with product managers and cross-functional stakeholders to define and refine feature requirements, actively contributing improvement ideas and participating in product discussions to align engineering execution with business goals.",
+            "Conducted internal walkthroughs and solution demos for product, support, and onboarding teams, clarifying system behavior, edge cases, and integration flows to improve operational readiness and reduce post-release issues.",
           ],
         },
       ],
     },
     {
-      company: "projekt202",
-      period: "2018 - 2019",
+      company: "IIT Bombay",
+      period: "Jan 2024 - Apr 2024",
       positions: [
         {
-          title: "UI Developer",
+          title: "Technical Research Intern",
           description: [
-            "I assisted in developing a reusable UI component library and worked closely with a multi-million dollar airline client to gather requirements.",
-            "My responsibility included developing solutions for enterprise clients worth millions of dollars, using Angular 7 for the frontend.",
-          ],
-        },
-      ],
-    },
-    {
-      company: "Major 4 Apps",
-      period: "2018 - 2019",
-      positions: [
-        {
-          title: "Founder & Developer",
-          description: [
-            "I developed custom applications for clients, designed, developed, tested, and supported mobile applications on iOS and Android platforms.",
-            "My mobile game ranked among the top 200 on the Amazon App Store.",
+            "Collaborated with a professor and startup founders to translate healthcare requirements into technical architecture options, evaluating Neo4j and ArangoDB for modeling complex patient–disease–treatment relationships.",
+            "Designed data models, entity-relationship graphs, and integration flows, built PoC prototypes to visualize healthcare data graphs, validate search and recommendation accuracy, and document findings to guide engineering and product decisions.",
           ],
         },
       ],
     },
   ],
-  avatarUrl: "/braydon_headshot_1.jpeg",
+  avatarUrl: "/arva_headshot_1.jpeg",
 };
 
 export function Resume() {

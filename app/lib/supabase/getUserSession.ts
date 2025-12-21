@@ -1,8 +1,6 @@
 "use server";
 
-import createSupabaseServerClient from "./server";
-
+// Frontend-only: Session function stubbed out (backend disabled)
 export default async function getUserSession() {
-  const supabase = await createSupabaseServerClient();
-  return supabase.auth.getSession();
+  return { data: { session: null }, error: null };
 }

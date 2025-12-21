@@ -79,7 +79,7 @@ export const PhotoGallery = ({
       y: "15px",
       zIndex: 50, // Highest z-index (on top)
       direction: "left" as Direction,
-      src: "/braydon_headshot_3.jpg",
+      src: "/arva_headshot_3.jpeg",
     },
     {
       id: 2,
@@ -97,7 +97,7 @@ export const PhotoGallery = ({
       y: "8px",
       zIndex: 30,
       direction: "right" as Direction,
-      src: "/braydon_headshot_1.jpeg",
+      src: "/arva_headshot_1.jpeg",
     },
     {
       id: 4,
@@ -115,7 +115,7 @@ export const PhotoGallery = ({
       y: "44px",
       zIndex: 10, // Lowest z-index (at bottom)
       direction: "left" as Direction,
-      src: "/braydon_headshot_4.jpg",
+      src: "/arva_headshot_4.jpeg",
     },
   ];
 
