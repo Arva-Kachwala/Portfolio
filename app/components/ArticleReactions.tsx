@@ -387,11 +387,11 @@ export default function ArticleReactions({
       const result = await toggleReaction(slug, type);
 
       // If server action successful, update with server data
-      if (result.success && result.userReactions) {
+      if (result.success && 'userReactions' in result && result.userReactions) {
         // Update with actual server values
-        setUserReactions(result.userReactions);
+        setUserReactions(result.userReactions as ReactionType[]);
         router.refresh(); // Refresh to get updated counts from server
-      } else {
+      } else if (!result.success) {
         // If there was an error, revert optimistic update
         console.error("Error toggling reaction");
 
