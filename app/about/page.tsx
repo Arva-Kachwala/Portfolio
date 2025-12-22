@@ -3,7 +3,6 @@ import { getTimeOfDayGreeting } from "app/lib/utils";
 import React from "react";
 import { ShadowBox } from "@/app/components/ShadowBox";
 import { GridWrapper } from "@/app/components/GridWrapper";
-import { AboutTrackPattern } from "@/app/components/AboutTrackPattern";
 import { Photo } from "@/app/components/Photo";
 
 export default function AboutPage() {
@@ -79,9 +78,6 @@ export default function AboutPage() {
             </GridWrapper>
           </div>
           <div className="relative h-fit w-full overflow-hidden">
-            <div className="absolute left-0 top-0 w-full md:left-4 lg:left-[355px] xl:left-[455px]">
-              <AboutTrackPattern />
-            </div>
 
             {/* Section 1 */}
             <div className="grid grid-cols-1 gap-8 py-12 pr-12 lg:grid-cols-2 lg:items-center lg:justify-between lg:py-32 lg:pb-20 xl:py-32">
