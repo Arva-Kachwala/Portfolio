@@ -21,7 +21,7 @@ export default function AboutPage() {
                 <span>{timeOfDayGreeting}</span>
               </div>
               <h1 className="mx-auto max-w-2xl text-balance text-center text-4xl font-medium leading-tight tracking-tighter text-text-primary md:text-5xl lg:text-left lg:text-6xl lg:leading-[64px]">
-                I&apos;m Arva, a creative frontend engineer.
+                I&apos;m Arva, a software engineer with a growing focus on product thinking and business impact.
               </h1>
             </div>
             <div className="order-1 my-12 flex-shrink-0 lg:order-2 lg:my-0">
@@ -91,21 +91,22 @@ export default function AboutPage() {
                     <ShadowBox width={188} height={278}></ShadowBox>
                     <img
                       className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[-8deg] rounded-lg object-cover shadow"
-                      src="/knights_kwest.jpeg"
-                      alt="A headshot"
+                      src="/arva_headshot_1.jpeg"
+                      alt="Arva Kachwala"
                     />
                   </div>
                 </div>
                 <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
-                  My programming origins
+                  Foundations: Learning to Think Like an Engineer
                 </h2>
+                <p className="mb-4 text-base leading-8 text-text-secondary font-medium">
+                  Computer Engineering
+                </p>
                 <p className="mb-6 text-base leading-8 text-text-secondary">
-                  When Apple unveiled the first iPad with its beautiful 1024x768
-                  display, I knew I had to create for it. I taught myself mobile
-                  development while freelancing, and soon I was shipping iOS and
-                  Android apps. One of my games even climbed above Angry Birds
-                  in the charts for a while—which still makes me smile when I
-                  think about it.
+                  I began my journey with a degree in Computer Engineering, where I learned how systems are built from the ground up—how data flows, how software scales, and how design decisions affect reliability and performance. More than just learning to code, this phase trained me to break down ambiguous problems, reason logically, and build structured solutions.
+                </p>
+                <p className="mb-6 text-base leading-8 text-text-secondary">
+                  This engineering mindset continues to shape how I approach problems today.
                 </p>
               </div>
               <div className="hidden lg:order-1 lg:block">
@@ -113,8 +114,8 @@ export default function AboutPage() {
                   <ShadowBox width={188} height={278}></ShadowBox>
                   <img
                     className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[-8deg] rounded-lg object-cover shadow"
-                    src="/knights_kwest.jpeg"
-                    alt="A headshot"
+                    src="/arva_headshot_1.jpeg"
+                    alt="Arva Kachwala"
                   />
                 </div>
               </div>
@@ -128,21 +129,22 @@ export default function AboutPage() {
                     <ShadowBox width={188} height={278}></ShadowBox>
                     <img
                       className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[8deg] rounded-lg object-cover shadow"
-                      src="/c3_speaker_head.png"
-                      alt="Speaking at C3 Conf!"
+                      src="/arva_headshot_3.jpeg"
+                      alt="Arva Kachwala"
                     />
                   </div>
                 </div>
                 <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
-                  Finding My Way to Web
+                  Building in the Real World
                 </h2>
+                <p className="mb-4 text-base leading-8 text-text-secondary font-medium">
+                  Software Development Experience
+                </p>
                 <p className="mb-6 text-base leading-8 text-text-secondary">
-                  Despite my love for mobile development, the web kept calling
-                  my name. With my eye for design, frontend felt like the
-                  perfect playground. I dove into HTML, CSS, and JavaScript—with
-                  React in 2016 becoming my game-changer. A few months later and
-                  I had landed my first full-time web dev role and never looked
-                  back.
+                  I then worked as a Software Development Engineer, where I translated ideas into production-ready systems. My role involved designing APIs, working with backend architectures, and shipping features used by real users.
+                </p>
+                <p className="mb-6 text-base leading-8 text-text-secondary">
+                  Through this experience, I became comfortable executing complex technical requirements, collaborating with cross-functional teams, and owning systems end-to-end.
                 </p>
               </div>
               <div className="hidden lg:block">
@@ -151,7 +153,7 @@ export default function AboutPage() {
                   <img
                     className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[8deg] rounded-lg object-cover shadow"
                     src="/arva_headshot_3.jpeg"
-                    alt="Speaking at C3 Conf!"
+                    alt="Arva Kachwala"
                   />
                 </div>
               </div>
@@ -165,26 +167,22 @@ export default function AboutPage() {
                     <ShadowBox width={188} height={278}></ShadowBox>
                     <img
                       className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[-8deg] rounded-lg object-cover shadow"
-                      src="/braydon_and_pj.jpeg"
-                      alt="A headshot"
+                      src="/arva_headshot_2.jpeg"
+                      alt="Arva Kachwala"
                     />
                   </div>
                 </div>
                 <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
-                  Life Beyond Code
+                  Expanding Beyond Code
                 </h2>
-                <p className="mb-6 text-base leading-8 text-text-secondary">
-                  When I met PeggyJean, I knew pretty quickly she was the one.
-                  After proposing, we had grand wedding plans – until COVID
-                  happened. We pivoted (developer joke!) and had a small,
-                  intimate ceremony in 2020 that turned out more perfect than we
-                  could have imagined.
+                <p className="mb-4 text-base leading-8 text-text-secondary font-medium">
+                  Curiosity for Product, Strategy & Business
                 </p>
                 <p className="mb-6 text-base leading-8 text-text-secondary">
-                  Family has always been my center, and seeing ours grow has
-                  been life&apos;s greatest joy. Our daughter ElizaJane arrived
-                  in 2021, bringing endless wonder to our days, and little Renny
-                  joined our crew in 2023, completing our circle.
+                  Over time, I grew increasingly curious about the why behind what we build—which problems are worth solving, how products create value, and how technical decisions align with business outcomes and user needs.
+                </p>
+                <p className="mb-6 text-base leading-8 text-text-secondary">
+                  I found myself drawn to conversations around product direction, user adoption, trade-offs, and go-to-market thinking. This curiosity has led me to explore roles at the intersection of technology and business, such as product management, product strategy, and solution engineering, where I can combine my technical background with a broader, more strategic perspective.
                 </p>
               </div>
               <div className="hidden lg:block">
@@ -192,8 +190,8 @@ export default function AboutPage() {
                   <ShadowBox width={188} height={278}></ShadowBox>
                   <img
                     className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[-8deg] rounded-lg object-cover shadow"
-                    src="/braydon_and_pj.jpeg"
-                    alt="A headshot"
+                    src="/arva_headshot_2.jpeg"
+                    alt="Arva Kachwala"
                   />
                 </div>
               </div>
@@ -207,8 +205,8 @@ export default function AboutPage() {
                     <ShadowBox width={188} height={278}></ShadowBox>
                     <img
                       className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[8deg] rounded-lg object-cover shadow"
-                      src="/braydon_speaking_photo.jpeg"
-                      alt="A headshot"
+                      src="/arva_headshot_4.jpeg"
+                      alt="Arva Kachwala"
                     />
                   </div>
                 </div>
@@ -216,19 +214,13 @@ export default function AboutPage() {
                   These Days
                 </h2>
                 <p className="mb-6 text-base leading-8 text-text-secondary">
-                  Currently, I&apos;m building large-scale back-end systems at
-                  Edelweiss Global Markets, working across Java, Spring Boot,
-                  MongoDB, Kafka, and everything in between.
+                  Currently, I&apos;m building large-scale back-end systems at Edelweiss Global Markets, working across Java, Spring Boot, MongoDB, Kafka, and everything in between.
                 </p>
                 <p className="mb-6 text-base leading-8 text-text-secondary">
-                  When I&apos;m not deep in code, you&apos;ll usually find me
-                  tinkering with side projects or writing for my blog.
+                  When I&apos;m not deep in code, you&apos;ll usually find me tinkering with side projects or writing for my blog.
                 </p>
                 <p className="mb-6 text-base leading-8 text-text-secondary">
-                  Outside the tech bubble, I&apos;m either losing at games with
-                  friends, hitting the gym, baking brownies, or—best of
-                  all—leaning into my inner foodie and exploring new places to
-                  eat.
+                  Outside the tech bubble, I&apos;m either losing at games with friends, hitting the gym, baking brownies, or—best of all—leaning into my inner foodie and exploring new places to eat.
                 </p>
               </div>
               <div className="hidden lg:block">
@@ -236,8 +228,8 @@ export default function AboutPage() {
                   <ShadowBox width={188} height={278}></ShadowBox>
                   <img
                     className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[8deg] rounded-lg object-cover shadow"
-                    src="/braydon_speaking_photo.jpeg"
-                    alt="A headshot"
+                    src="/arva_headshot_4.jpeg"
+                    alt="Arva Kachwala"
                   />
                 </div>
               </div>
