@@ -3,7 +3,7 @@ export const siteMetadata = {
   author: "Arva Kachwala",
   headerTitle: "Arva's Portfolio",
   description:
-    "I'm Arva, a senior front-end engineer, blogger and international speaker. Welcome to my corner of the internet!",
+    "I'm Arva, a software engineer and product enthusiast. Welcome to my corner of the internet!",
   language: "en-us",
   siteUrl: "https://braydoncoyer.dev",
   siteRepo: "https://github.com/Arva-Kachwala/Arva-Portfolio",
