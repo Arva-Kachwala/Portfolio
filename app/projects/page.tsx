@@ -15,13 +15,6 @@ const projects: Project[] = [
     image: "/projects/commit_your_code_project.jpeg",
     url: "https://www.commityourcode.com/",
   },
-  {
-    title: "Pomegradient",
-    description:
-      "Pomegradient is a web-based gradient solution that allows you to find, save and craft gradients with a creative community!",
-    image: "/projects/pomegradient_project.jpeg",
-    url: "https://www.pomegradient.com/",
-  },
 ];
 
 function ProjectImage(props) {
