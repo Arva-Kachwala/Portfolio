@@ -5,7 +5,6 @@ import { CurrentlyPlayingBento } from "@/app/components/CurrentlyPlayingBento";
 import { ConnectionsBento } from "@/app/components/ConnectionsBento";
 import { ScrapbookBento } from "@/app/components/ScrapbookBento";
 import { ShadowBox } from "@/app/components/ShadowBox";
-import { Resume } from "app/components/Resume";
 import { StatsBento } from "@/app/components/StatsBento";
 import { CurrentlyReadingBento } from "@/app/components/CurrentlyReadingBento";
 import { GridWrapper } from "@/app/components/GridWrapper";
@@ -249,30 +248,6 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* About */}
-        <div className="relative space-y-8 text-center">
-          <div className="space-y-4">
-            <GridWrapper>
-              <div className="text-center text-sm font-medium text-indigo-600">
-                <span>Experience</span>
-              </div>
-            </GridWrapper>
-            <GridWrapper>
-              <h2 className="mx-auto max-w-lg text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
-                My work history and achievements timeline.
-              </h2>
-            </GridWrapper>
-          </div>
-        </div>
-        <div className="space-y-16">
-          <GridWrapper>
-            <Resume />
-          </GridWrapper>
-          {/* <div className="flex justify-center">
-            <Button variant="secondary">Download Resume</Button>
-          </div> */}
         </div>
 
         <section className="relative space-y-16">
