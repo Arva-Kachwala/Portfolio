@@ -1,7 +1,13 @@
 import { HorizontalLine } from "@/app/components/HorizontalLine";
 import { getTimeOfDayGreeting } from "app/lib/utils";
 import React from "react";
+import { CurrentlyPlayingBento } from "@/app/components/CurrentlyPlayingBento";
+import { ConnectionsBento } from "@/app/components/ConnectionsBento";
+import { ScrapbookBento } from "@/app/components/ScrapbookBento";
 import { ShadowBox } from "@/app/components/ShadowBox";
+import { Resume } from "app/components/Resume";
+import { StatsBento } from "@/app/components/StatsBento";
+import { CurrentlyReadingBento } from "@/app/components/CurrentlyReadingBento";
 import { GridWrapper } from "@/app/components/GridWrapper";
 import { AboutTrackPattern } from "@/app/components/AboutTrackPattern";
 import { Photo } from "@/app/components/Photo";
@@ -244,6 +250,68 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+
+        {/* About */}
+        <div className="relative space-y-8 text-center">
+          <div className="space-y-4">
+            <GridWrapper>
+              <div className="text-center text-sm font-medium text-indigo-600">
+                <span>Experience</span>
+              </div>
+            </GridWrapper>
+            <GridWrapper>
+              <h2 className="mx-auto max-w-lg text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
+                My work history and achievements timeline.
+              </h2>
+            </GridWrapper>
+          </div>
+        </div>
+        <div className="space-y-16">
+          <GridWrapper>
+            <Resume />
+          </GridWrapper>
+          {/* <div className="flex justify-center">
+            <Button variant="secondary">Download Resume</Button>
+          </div> */}
+        </div>
+
+        <section className="relative space-y-16">
+          <div className="space-y-4">
+            <GridWrapper>
+              <div className="text-center text-sm font-medium text-indigo-600">
+                <span>More</span>
+              </div>
+            </GridWrapper>
+
+            <GridWrapper>
+              <h2 className="mx-auto max-w-lg text-balance text-center text-3xl font-medium leading-10 tracking-tight text-text-primary">
+                Here&apos;s what sets me apart and makes me unique
+              </h2>
+            </GridWrapper>
+          </div>
+
+          {/* About Grid */}
+          <GridWrapper>
+            <div className="grid grid-cols-1 gap-2 lg:grid-cols-12">
+              <div className="lg:col-span-3 lg:row-span-6">
+                <CurrentlyPlayingBento />
+              </div>
+              <div className="hidden lg:col-span-7 lg:row-span-5 lg:block">
+                <ScrapbookBento />
+              </div>
+              <div className="hidden lg:col-span-2 lg:col-start-11 lg:row-span-10 lg:block lg:min-h-[50px]">
+                <CurrentlyReadingBento />
+              </div>
+              <div className="lg:col-span-7 lg:row-span-8">
+                <ConnectionsBento linkTo="/connections" />
+              </div>
+
+              <div className="lg:col-span-3 lg:row-span-4">
+                <StatsBento />
+              </div>
+            </div>
+          </GridWrapper>
+        </section>
 
       </div>
     </div>

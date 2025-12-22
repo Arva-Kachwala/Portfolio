@@ -14,7 +14,7 @@ type NavigationLink = {
 const navigationLinks: readonly NavigationLink[] = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
-  { name: "Experience", link: "/experience" },
+  { name: "Blog", link: "/blog" },
   { name: "Projects", link: "/projects" },
 ] as const;
 

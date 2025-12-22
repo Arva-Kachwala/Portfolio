@@ -3,20 +3,32 @@ import { GridWrapper } from "@/app/components/GridWrapper";
 interface Project {
   title: string;
   description: string;
+  image: string;
+  url: string;
 }
 
 const projects: Project[] = [
   {
-    title: "QueueFree - Cafeteria System",
+    title: "Commit Your Code Conference Website",
     description:
-      "Engaged directly with a canteen services provider to understand operational bottlenecks in menu distribution, peak-hour ordering, and queue congestion. Built a functional prototype enabling digital menus, seamless order placement, and pickup coordination—collaborating closely with the client to refine workflows and prepare handover documentation for deployment across their partner workplaces.",
+      "A web development conference for charity, the Commit Your Code Conference website was designed and built by me using Figma, Next.js and Tailwind CSS.",
+    image: "/projects/commit_your_code_project.jpeg",
+    url: "https://www.commityourcode.com/",
   },
   {
-    title: "Real-Time Bus Tracking Application",
+    title: "Pomegradient",
     description:
-      "Designed a real-time visibility model enabling live GPS location broadcasts for active bus routes, directly addressing commuter uncertainty around arrival times in hilly and low-connectivity regions. Demonstrated strong problem-structuring and stakeholder alignment by mapping government pain points to measurable operational insights, earning positive feedback from Himachal Pradesh government evaluators for the practicality and scalability of the approach.",
+      "Pomegradient is a web-based gradient solution that allows you to find, save and craft gradients with a creative community!",
+    image: "/projects/pomegradient_project.jpeg",
+    url: "https://www.pomegradient.com/",
   },
 ];
+
+function ProjectImage(props) {
+  return (
+    <img src={props.src} alt={props.alt} className="drama-shadow rounded-xl" />
+  );
+}
 
 export default function ProjectPage() {
   return (
@@ -27,15 +39,41 @@ export default function ProjectPage() {
         </h1>
       </GridWrapper>
 
-      <GridWrapper className="space-y-12 px-10">
+      <GridWrapper className="space-y-12">
         {projects.map((project) => (
-          <div key={project.title} className="max-w-2xl">
-            <h2 className="mb-3 text-2xl font-medium leading-6 tracking-tight text-slate-900 md:leading-none">
-              {project.title}
-            </h2>
-            <p className="text-base leading-7 text-text-secondary">
-              {project.description}
-            </p>
+          <div key={project.title} className="space-y-12">
+            <GridWrapper className="px-10">
+              <ProjectImage src={project.image} alt={project.title} />
+            </GridWrapper>
+            <GridWrapper className="px-10">
+              <div className="max-w-2xl text-balance">
+                <h2 className="mb-3 text-2xl font-medium leading-6 tracking-tight text-slate-900 md:leading-none">
+                  {project.title}
+                </h2>
+                <p className="mb-3 flex-grow text-base leading-6 text-text-secondary">
+                  {project.description}
+                </p>
+                <a
+                  className="inline-flex items-center text-sm font-medium text-indigo-600"
+                  href={project.url}
+                >
+                  Visit {project.title}
+                  <svg
+                    className="relative ml-2.5 mt-px overflow-visible"
+                    width="3"
+                    height="6"
+                    viewBox="0 0 3 6"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M0 0L3 3L0 6"></path>
+                  </svg>
+                </a>
+              </div>
+            </GridWrapper>
           </div>
         ))}
       </GridWrapper>

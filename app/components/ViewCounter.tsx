@@ -11,7 +11,7 @@ export function ViewCounter({
   className?: string;
 }) {
   // Return a static placeholder view count for frontend-only mode
-  const viewCount: number = 0;
+  const viewCount = 0;
 
   return (
     <span className={clsx(className)}>
