@@ -106,7 +106,7 @@ export const PhotoGallery = ({
       y: "22px",
       zIndex: 20,
       direction: "right" as Direction,
-      src: "/arva_headshot_7.jpeg",
+      src: "/arva_headshot_6.jpeg",
     },
     {
       id: 5,
