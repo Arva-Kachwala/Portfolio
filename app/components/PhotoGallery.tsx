@@ -88,7 +88,7 @@ export const PhotoGallery = ({
       y: "32px",
       zIndex: 40,
       direction: "left" as Direction,
-      src: "/braydon_speaking_photo.jpeg",
+      src: "/arva_headshot_2.jpeg",
     },
     {
       id: 3,

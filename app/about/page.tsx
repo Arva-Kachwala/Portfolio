@@ -30,7 +30,7 @@ export default function AboutPage() {
                     <Photo
                       width={140}
                       height={140}
-                      src="/braydon_speaking_photo.jpeg"
+                      src="/arva_headshot_2.jpeg"
                       alt="Arva Kachwala"
                       direction="left"
                     />

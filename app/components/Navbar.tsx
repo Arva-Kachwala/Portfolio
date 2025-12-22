@@ -137,7 +137,7 @@ const NavLogo: React.FC<NavLogoProps> = ({ onClickCallback }) => {
       <img
         className="h-8 w-8"
         src="/bcoyerlogo_dark.svg"
-        alt="Braydon's Logo"
+        alt="Arva's Logo"
       />
     </Link>
   );

@@ -11,8 +11,8 @@ export function ProfilePicture() {
     setIsChanging(true);
     const images = [
       "/arva_headshot_1.jpeg",
+      "/arva_headshot_2.jpeg",
       "/arva_headshot_3.jpeg",
-      "/braydon_speaking_photo.jpeg",
       "/arva_headshot_4.jpeg",
     ];
     const availableImages = images.filter((img) => img !== imageSrc);
