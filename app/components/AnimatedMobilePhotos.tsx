@@ -25,7 +25,7 @@ export function AnimatedMobilePhotos({ delay }: AnimatedMobilePhotosProps) {
             <ShadowBox width={170} height={252}></ShadowBox>
             <img
               className="absolute left-0 top-2 h-[245px] w-[163px] rotate-[-5deg] rounded-lg object-cover"
-              src="/c3_speaker_head.png"
+              src="/arva_headshot_6.jpeg"
               alt="A headshot"
             />
           </motion.div>
