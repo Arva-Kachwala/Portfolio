@@ -8,8 +8,8 @@ export function AboutMeBento({ linkTo }: { linkTo?: string }) {
     <BentoCard height="h-[275px] md:h-[304px] lg:h-[220px]" linkTo={linkTo}>
       <div className="group flex h-full">
         <div className="text-balance">
-          <h2 className="mb-4 text-base font-medium">Learn more about me</h2>
-          <p className="mb-2 text-balance pr-1 text-text-secondary md:pr-4">
+          <h2 className="mb-4 text-base font-medium dark:text-slate-100">Learn more about me</h2>
+          <p className="mb-2 text-balance pr-1 text-text-secondary dark:text-slate-400 md:pr-4">
             {timeOfDayGreeting} <br />
             I&apos;m Arva, an experienced software developer.
           </p>

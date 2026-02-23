@@ -16,10 +16,10 @@ export default function AboutPage() {
         <GridWrapper className="space-y-12">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-around lg:px-24">
             <div className="order-2 mx-auto max-w-lg lg:order-1 lg:m-0 lg:max-w-3xl lg:pr-12">
-              <div className="text-center text-base font-medium text-indigo-600 lg:text-left lg:text-lg">
+              <div className="text-center text-base font-medium text-indigo-600 dark:text-indigo-400 lg:text-left lg:text-lg">
                 <span>{timeOfDayGreeting}</span>
               </div>
-              <h1 className="mx-auto max-w-2xl text-balance text-center text-3xl font-medium leading-tight tracking-tighter text-text-primary md:text-4xl lg:text-left lg:text-5xl lg:leading-[56px]">
+              <h1 className="mx-auto max-w-2xl text-balance text-center text-3xl font-medium leading-tight tracking-tighter text-text-primary dark:text-slate-100 md:text-4xl lg:text-left lg:text-5xl lg:leading-[56px]">
                 I&apos;m Arva, a software engineer with a growing focus on product thinking and business impact.
               </h1>
             </div>
@@ -67,12 +67,12 @@ export default function AboutPage() {
         <div className="relative space-y-8 text-center">
           <div className="space-y-4">
             <GridWrapper>
-              <div className="text-center text-sm font-medium text-indigo-600">
+              <div className="text-center text-sm font-medium text-indigo-600 dark:text-indigo-400">
                 <span>About</span>
               </div>
             </GridWrapper>
             <GridWrapper>
-              <h2 className="mx-auto max-w-xl text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
+              <h2 className="mx-auto max-w-xl text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary dark:text-slate-100">
                 Here&apos;s a quick intro about me and what I love to do
               </h2>
             </GridWrapper>
@@ -92,16 +92,16 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
+                <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary dark:text-slate-100">
                   Foundations: Learning to Think Like an Engineer
                 </h2>
-                <p className="mb-4 text-base leading-8 text-text-secondary font-medium">
+                <p className="mb-4 text-base font-medium leading-8 text-text-secondary dark:text-slate-300">
                   Computer Engineering
                 </p>
-                <p className="mb-6 text-base leading-8 text-text-secondary">
+                <p className="mb-6 text-base leading-8 text-text-secondary dark:text-slate-400">
                   I began my journey with a degree in Computer Engineering, where I learned how systems are built from the ground up—how data flows, how software scales, and how design decisions affect reliability and performance. More than just learning to code, this phase trained me to break down ambiguous problems, reason logically, and build structured solutions.
                 </p>
-                <p className="mb-6 text-base leading-8 text-text-secondary">
+                <p className="mb-6 text-base leading-8 text-text-secondary dark:text-slate-400">
                   This engineering mindset continues to shape how I approach problems today.
                 </p>
               </div>
@@ -130,16 +130,16 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
+                <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary dark:text-slate-100">
                   Building in the Real World
                 </h2>
-                <p className="mb-4 text-base leading-8 text-text-secondary font-medium">
+                <p className="mb-4 text-base font-medium leading-8 text-text-secondary dark:text-slate-300">
                   Software Development Experience
                 </p>
-                <p className="mb-6 text-base leading-8 text-text-secondary">
+                <p className="mb-6 text-base leading-8 text-text-secondary dark:text-slate-400">
                   I then worked as a Software Development Engineer, where I translated ideas into production-ready systems. My role involved designing APIs, working with backend architectures, and shipping features used by real users.
                 </p>
-                <p className="mb-6 text-base leading-8 text-text-secondary">
+                <p className="mb-6 text-base leading-8 text-text-secondary dark:text-slate-400">
                   Through this experience, I became comfortable executing complex technical requirements, collaborating with cross-functional teams, and owning systems end-to-end.
                 </p>
               </div>
@@ -168,16 +168,16 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
+                <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary dark:text-slate-100">
                   Expanding Beyond Code
                 </h2>
-                <p className="mb-4 text-base leading-8 text-text-secondary font-medium">
+                <p className="mb-4 text-base font-medium leading-8 text-text-secondary dark:text-slate-300">
                   Curiosity for Product, Strategy & Business
                 </p>
-                <p className="mb-6 text-base leading-8 text-text-secondary">
+                <p className="mb-6 text-base leading-8 text-text-secondary dark:text-slate-400">
                   Over time, I grew increasingly curious about the why behind what we build—which problems are worth solving, how products create value, and how technical decisions align with business outcomes and user needs.
                 </p>
-                <p className="mb-6 text-base leading-8 text-text-secondary">
+                <p className="mb-6 text-base leading-8 text-text-secondary dark:text-slate-400">
                   I found myself drawn to conversations around product direction, user adoption, trade-offs, and go-to-market thinking. This curiosity has led me to explore roles at the intersection of technology and business, such as product management, product strategy, and solution engineering, where I can combine my technical background with a broader, more strategic perspective.
                 </p>
               </div>
@@ -206,16 +206,16 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
+                <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary dark:text-slate-100">
                   These Days
                 </h2>
-                <p className="mb-6 text-base leading-8 text-text-secondary">
+                <p className="mb-6 text-base leading-8 text-text-secondary dark:text-slate-400">
                   Currently, I&apos;m building large-scale back-end systems at Edelweiss Global Markets, working across Java, Spring Boot, MongoDB, Kafka, and everything in between.
                 </p>
-                <p className="mb-6 text-base leading-8 text-text-secondary">
+                <p className="mb-6 text-base leading-8 text-text-secondary dark:text-slate-400">
                   When I&apos;m not deep in code, you&apos;ll usually find me tinkering with side projects or writing for my blog.
                 </p>
-                <p className="mb-6 text-base leading-8 text-text-secondary">
+                <p className="mb-6 text-base leading-8 text-text-secondary dark:text-slate-400">
                   Outside the tech bubble, I&apos;m either losing at games with friends, hitting the gym, baking brownies, or—best of all—leaning into my inner foodie and exploring new places to eat.
                 </p>
               </div>

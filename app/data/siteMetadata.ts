@@ -14,6 +14,7 @@ export const siteMetadata = {
   email: "mailto:braydon@coyer.net",
   github: "https://github.com/Arva-Kachwala",
   linkedin: "https://www.linkedin.com/in/arva-kachwala/",
+  instagram: "https://www.instagram.com/arva_13?igsh=MThwMTlmaGQ5bjg0MA%3D%3D&utm_source=qr",
   resume: "/static/braydoncoyer_resume.pdf",
   snippets:
     "https://www.notion.so/9f35162787e0448094188b66304cf9f6?v=1b9c4e146edf46148fe7b1c5346cbea4",

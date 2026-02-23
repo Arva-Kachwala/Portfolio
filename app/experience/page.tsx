@@ -9,12 +9,12 @@ export default function ExperiencePage() {
         <div className="relative space-y-8 text-center">
           <div className="space-y-4">
             <GridWrapper>
-              <div className="text-center text-sm font-medium text-indigo-600">
+              <div className="text-center text-sm font-medium text-indigo-600 dark:text-indigo-400">
                 <span>Experience</span>
               </div>
             </GridWrapper>
             <GridWrapper>
-              <h1 className="mx-auto max-w-2xl text-balance text-center text-4xl font-medium leading-tight tracking-tighter text-text-primary md:text-6xl md:leading-[64px]">
+                  <h1 className="mx-auto max-w-2xl text-balance text-center text-4xl font-medium leading-tight tracking-tighter text-text-primary dark:text-slate-100 md:text-6xl md:leading-[64px]">
                 My work history and achievements timeline.
               </h1>
             </GridWrapper>

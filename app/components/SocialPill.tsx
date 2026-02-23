@@ -2,7 +2,7 @@ import { siteMetadata } from "app/data/siteMetadata";
 
 export function SocialPill() {
   return (
-    <div className="z-30 flex place-items-center space-x-1 rounded-full bg-dark-primary px-3 py-1.5">
+    <div className="z-30 flex place-items-center space-x-1 rounded-full bg-dark-primary px-3 py-1.5 dark:bg-slate-800">
       <a href={siteMetadata.linkedin} aria-label="LinkedIn">
         <svg
           className="h-6 w-6 text-gray-400 transition-colors hover:text-gray-300"
@@ -61,6 +61,36 @@ export function SocialPill() {
             strokeLinecap="round"
             strokeLinejoin="round"
           ></path>
+        </svg>
+      </a>
+      <a href={siteMetadata.instagram} aria-label="Instagram">
+        <svg
+          className="h-6 w-6 text-gray-400 transition-colors hover:text-gray-300"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="4.75"
+            y="4.75"
+            width="14.5"
+            height="14.5"
+            rx="3.25"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <circle
+            cx="12"
+            cy="12"
+            r="3.25"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <circle cx="16.5" cy="7.5" r="0.75" fill="currentColor" />
         </svg>
       </a>
     </div>

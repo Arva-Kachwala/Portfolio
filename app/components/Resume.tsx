@@ -55,15 +55,15 @@ export function Resume() {
     <div>
       <div className="mx-auto max-w-6xl px-4">
         <div className="relative">
-          <div className="divide-y divide-gray-100">
+          <div className="divide-y divide-gray-100 dark:divide-slate-800">
             {resumeData.experiences.map((experience) => (
               <div
                 key={experience.company}
                 className="grid grid-cols-[1fr,5fr] gap-6 py-12 first:pt-0 last:pb-0 md:grid-cols-[2fr,1fr,4fr]"
               >
                 <div className="hidden md:block">
-                  <h3 className="text-xl font-bold">{experience.company}</h3>
-                  <p className="text-sm text-gray-600">{experience.period}</p>
+                  <h3 className="text-xl font-bold dark:text-slate-100">{experience.company}</h3>
+                  <p className="text-sm text-gray-600 dark:text-slate-400">{experience.period}</p>
                 </div>
 
                 <div />
@@ -74,12 +74,12 @@ export function Resume() {
                       key={`${experience.company}-${index}`}
                       className="space-y-4"
                     >
-                      <h4 className="text-lg font-semibold">
+                      <h4 className="text-lg font-semibold dark:text-slate-200">
                         {position.title}
                       </h4>
                       <div className="space-y-3">
                         {position.description.map((desc, i) => (
-                          <p key={i} className="text-gray-600">
+                          <p key={i} className="text-gray-600 dark:text-slate-400">
                             {desc}
                           </p>
                         ))}

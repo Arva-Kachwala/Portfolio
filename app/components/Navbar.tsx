@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { SocialPill } from "./SocialPill";
+import { ThemeToggle } from "./ThemeToggle";
 import { usePathname } from "next/navigation";
 import { CloseButton, Dialog, DialogPanel } from "@headlessui/react";
 import { useEffect, useState } from "react";
@@ -31,24 +32,26 @@ function DesktopNav() {
   const path = usePathname();
 
   const determineActiveClass = (link: string): string => {
-    return path === link ? "text-text-primary" : "text-gray-500";
+    return path === link
+      ? "text-text-primary dark:text-slate-100"
+      : "text-gray-500 dark:text-slate-400";
   };
 
   return (
     <nav
       aria-label="Desktop navigation"
-      className="hidden h-16 w-full items-center justify-between border-b border-border-primary/50 px-4 md:flex"
+      className="hidden h-16 w-full items-center justify-between border-b border-border-primary/50 px-4 dark:border-slate-700/50 md:flex"
     >
       <div className="w-[104px]">
         <Link href="/" aria-label="Home">
           <img
-            className="h-6 w-6"
+            className="h-6 w-6 dark:invert"
             src="/bcoyerlogo_dark.svg"
             alt="Arva's Logo"
           />
         </Link>
       </div>
-      <ul className="flex place-items-center space-x-4 rounded-full border border-border-primary px-5 py-2 text-sm text-gray-500">
+      <ul className="flex place-items-center space-x-4 rounded-full border border-border-primary px-5 py-2 text-sm text-gray-500 dark:border-slate-700 dark:text-slate-400">
         {navigationLinks.map((link) => (
           <li key={link.name}>
             <Link
@@ -56,14 +59,17 @@ function DesktopNav() {
               prefetch={true}
               className={`${determineActiveClass(
                 link.link,
-              )} font-medium hover:text-text-primary`}
+              )} font-medium hover:text-text-primary dark:hover:text-slate-100`}
             >
               {link.name}
             </Link>
           </li>
         ))}
       </ul>
-      <SocialPill />
+      <div className="flex items-center gap-2">
+        <ThemeToggle />
+        <SocialPill />
+      </div>
     </nav>
   );
 }
@@ -79,29 +85,32 @@ function MobileNav() {
   return (
     <nav
       aria-label="Mobile navigation"
-      className="flex h-16 items-center justify-between gap-2.5 border-b border-border-primary/50 px-3 md:hidden"
+      className="flex h-16 items-center justify-between gap-2.5 border-b border-border-primary/50 px-3 dark:border-slate-700/50 md:hidden"
     >
       <NavLogo onClickCallback={setIsOpen} />
 
-      <CircleBtn
-        onClickCallback={() => setIsOpen(!isOpen)}
-        aria-expanded={isOpen}
-        aria-controls="mobile-menu"
-        aria-label="Toggle menu"
-      />
+      <div className="flex items-center gap-2">
+        <ThemeToggle />
+        <CircleBtn
+          onClickCallback={() => setIsOpen(!isOpen)}
+          aria-expanded={isOpen}
+          aria-controls="mobile-menu"
+          aria-label="Toggle menu"
+        />
+      </div>
 
       <Dialog
         open={isOpen}
         onClose={() => setIsOpen(false)}
-        className="fixed inset-0 z-50 bg-bg-primary py-1 focus:outline-none md:hidden"
+        className="fixed inset-0 z-50 bg-bg-primary py-1 focus:outline-none dark:bg-slate-950 md:hidden"
       >
         <DialogPanel id="mobile-menu" className="size-full overflow-y-auto">
           <div className="flex h-14 items-center justify-between px-3">
             <NavLogo onClickCallback={setIsOpen} />
-            <CloseButton className="rounded-full border border-border-primary p-2">
-              <svg viewBox="0 0 16 16" fill="currentColor" className="h-5 w-5">
+            <CloseButton className="rounded-full border border-border-primary p-2 dark:border-slate-600">
+              <svg viewBox="0 0 16 16" fill="currentColor" className="h-5 w-5 dark:text-slate-300">
                 <path
-                  fill="#3C3C3F"
+                  fill="currentColor"
                   d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94 5.28 4.22Z"
                 ></path>
               </svg>
@@ -113,7 +122,9 @@ function MobileNav() {
                 href={link}
                 key={link}
                 className={`rounded-lg px-3 py-2 text-xl/9 font-medium ${
-                  path === link ? "text-text-primary" : "text-text-secondary"
+                  path === link
+                    ? "text-text-primary dark:text-slate-100"
+                    : "text-text-secondary dark:text-slate-400"
                 } data-active:bg-gray-950/5`}
                 aria-current={path === link ? "page" : undefined}
               >
@@ -135,7 +146,7 @@ const NavLogo: React.FC<NavLogoProps> = ({ onClickCallback }) => {
   return (
     <Link href="/" onClick={() => onClickCallback(false)} aria-label="Home">
       <img
-        className="h-8 w-8"
+        className="h-8 w-8 dark:invert"
         src="/bcoyerlogo_dark.svg"
         alt="Arva's Logo"
       />
@@ -157,7 +168,7 @@ const CircleBtn = ({
 }: CircleBtnProps): JSX.Element => {
   return (
     <button
-      className={`rounded-full border border-border-primary p-2 ${className}`}
+      className={`rounded-full border border-border-primary p-2 dark:border-slate-600 dark:text-slate-300 ${className}`}
       onClick={onClickCallback}
       {...props}
     >

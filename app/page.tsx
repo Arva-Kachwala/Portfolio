@@ -21,10 +21,9 @@ export default function Home() {
               <AnimatedText
                 as="h1"
                 delay={HEADING_DELAY}
-                className="mx-auto max-w-2xl text-center text-4xl font-medium leading-tight tracking-tighter text-text-primary md:text-6xl md:leading-[64px]"
+                className="mx-auto max-w-2xl text-center text-4xl font-medium leading-tight tracking-tighter text-text-primary dark:text-slate-100 md:text-6xl md:leading-[64px]"
               >
-                Hey, I&apos;m Arva! <br /> Welcome to my corner of the
-                internet!
+                Hey, I&apos;m Arva! <br /> Welcome to my corner of the internet!
               </AnimatedText>
             </GridWrapper>
             <GridWrapper>
@@ -32,7 +31,7 @@ export default function Home() {
                 <AnimatedText
                   as="p"
                   delay={PARAGRAPH_DELAY}
-                  className="leading-8 text-text-secondary"
+                  className="leading-8 text-text-secondary dark:text-slate-400"
                 >
                   I&apos;m a software engineer with a growing focus on product
                   thinking, business impact, and customer-centric technology
@@ -56,12 +55,12 @@ export default function Home() {
         <section className="relative space-y-10 md:space-y-16">
           <div className="space-y-4">
             <GridWrapper>
-              <div className="text-center text-sm font-medium text-indigo-600">
+              <div className="text-center text-sm font-medium text-indigo-600 dark:text-indigo-400">
                 <span>About</span>
               </div>
             </GridWrapper>
             <GridWrapper>
-              <h2 className="mx-auto max-w-lg text-balance text-center text-3xl font-medium leading-10 tracking-tight text-text-primary md:text-4xl">
+              <h2 className="mx-auto max-w-lg text-balance text-center text-3xl font-medium leading-10 tracking-tight text-text-primary dark:text-slate-100 md:text-4xl">
                 Here&apos;s what sets me apart and makes me unique
               </h2>
             </GridWrapper>
