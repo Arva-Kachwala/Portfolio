@@ -18,7 +18,7 @@ export function Footer(): JSX.Element {
                   />
                 </Link>
                 <p className="text-gray-500">
-                  © {new Date().getFullYear()} Arva Kachwala
+                  © 2025 Arva Kachwala
                 </p>
               </div>
               <SocialPill />
