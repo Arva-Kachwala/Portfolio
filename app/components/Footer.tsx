@@ -18,7 +18,7 @@ export function Footer(): JSX.Element {
                   />
                 </Link>
                 <p className="text-gray-500">
-                  © 2025 Arva Kachwala
+                  © 2026 Arva Kachwala
                 </p>
               </div>
               <SocialPill />
