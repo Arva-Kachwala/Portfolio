@@ -80,7 +80,7 @@ export default function AboutPage() {
           <div className="relative h-fit w-full overflow-hidden">
 
             {/* Section 1 */}
-            <div className="grid grid-cols-1 gap-8 py-12 pr-12 lg:grid-cols-2 lg:items-center lg:justify-between lg:py-32 lg:pb-20 xl:py-32">
+            <div className="grid grid-cols-1 gap-8 py-8 pr-12 lg:grid-cols-2 lg:items-center lg:justify-between lg:py-12 xl:py-12">
               <div className="flex flex-col items-center text-left lg:order-2 lg:items-start">
                 <div className="mb-8 lg:hidden">
                   <div className="relative mx-auto w-fit">
@@ -118,7 +118,7 @@ export default function AboutPage() {
             </div>
 
             {/* Section 2 */}
-            <div className="grid grid-cols-1 gap-8 py-24 lg:grid-cols-2 lg:items-center lg:justify-between lg:pl-12">
+            <div className="grid grid-cols-1 gap-8 py-8 lg:grid-cols-2 lg:items-center lg:justify-between lg:py-12 lg:pl-12">
               <div className="flex flex-col items-center text-left lg:items-start">
                 <div className="mb-8 lg:hidden">
                   <div className="relative mx-auto w-fit">
@@ -156,7 +156,7 @@ export default function AboutPage() {
             </div>
 
             {/* Section 3 */}
-            <div className="grid grid-cols-1 gap-8 pr-12 lg:grid-cols-2 lg:items-center lg:justify-between xl:py-24">
+            <div className="grid grid-cols-1 gap-8 py-8 pr-12 lg:grid-cols-2 lg:items-center lg:justify-between lg:py-12">
               <div className="flex flex-col items-center text-left lg:order-2 lg:items-start">
                 <div className="mb-8 lg:hidden">
                   <div className="relative mx-auto w-fit">
@@ -194,7 +194,7 @@ export default function AboutPage() {
             </div>
 
             {/* Section 4 */}
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center lg:justify-between lg:py-32 lg:pl-12 xl:py-24">
+            <div className="grid grid-cols-1 gap-8 py-8 lg:grid-cols-2 lg:items-center lg:justify-between lg:py-12 lg:pl-12">
               <div className="flex flex-col items-center text-left lg:items-start">
                 <div className="mb-8 lg:hidden">
                   <div className="relative mx-auto w-fit">
